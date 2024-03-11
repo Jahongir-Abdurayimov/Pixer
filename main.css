@@ -20,6 +20,9 @@ img {
   margin-block: 0;
 }
 
+.site-header {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
 
 .header-inner {
   display: flex;
@@ -87,7 +90,7 @@ img {
   border-radius: 5px;
   color: #fff;
   background-color: #00bafc99; 
-  border:3px solid #00bafc99; 
+  border:3px solid transparent; 
 }
 
 .hero {
@@ -122,10 +125,10 @@ img {
   color: #fff;
 }
 .hero-link:hover {
-  background-color: #00bafccc;
+  opacity: 0.8;
 }
 .hero-link:active {
-  background-color: #00bafc99;
+  opacity: 0.6;
 }
 
 .services {
@@ -133,6 +136,7 @@ img {
 }
 .wrapper-services-title {
   margin-inline: auto;
+  
   margin-block: 0 16px;
   width: 719px;
   text-align: center;
@@ -142,7 +146,7 @@ img {
   line-height: 130%;
 }
 .services-title-desc {
-  
+  margin: 0;
   line-height: 24px;
 }
 .service-list {
@@ -156,6 +160,14 @@ img {
   margin-block-end: 40px;
   padding: 24px;
   text-align: center;
+  border-radius: 5px;  
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.10);
+}
+.service-item:hover {
+  box-shadow: 0px 12px 21px 0px rgba(0, 0, 0, 0.10);
+}
+.service-item:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
 }
 .smm {
   margin-inline-end: 0;
@@ -210,6 +222,12 @@ img {
   width: 719px;
   margin-inline: auto;
   text-align: center;
+}
+.working-section-titile {
+  margin: 0 0 16px;
+}
+.working-section-desc {
+  margin: 0;
 }
 .working-item-title {
   margin: 0 0 8px;
@@ -314,4 +332,57 @@ img {
 .footer-item-link:active {
   opacity: 0.6;
 
+}
+.services-page {
+  background: #f4f4f4;
+  padding-block: 72px 80px;
+}
+.wrapper-services-page-title {
+  width: 800px;
+  text-align: center;
+  margin-inline: auto;
+  margin-block-end: 152px;
+}
+.services-page-title {
+  margin: 0 0 16px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.services-page-desc {
+  margin: 0;
+  line-height: 24px;
+}
+.page-item {
+  width: 804px;
+  margin-inline: auto;
+  margin-block-end: 64px;
+  padding: 32px;
+  display: flex;
+  column-gap: 40px;
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.12);
+}
+.page-item-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 130%;
+}
+.page-item-title-desc {
+  margin: 0 0 16px;
+  line-height: 24px;
+}
+.page-item-list {
+  padding-left: 16px;
+  list-style: url("./images/itemmark.svg");
+  margin: 0 0 16px;
+}
+.page-list-item {
+  line-height: 24px;
+  margin: 0 0 8px;
+}
+.page-item-link {
+  display: flex;
+  justify-content: flex-start;
 }
