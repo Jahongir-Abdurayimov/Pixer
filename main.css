@@ -333,15 +333,13 @@ img {
   opacity: 0.6;
 
 }
-.services-page {
-  background: #f4f4f4;
-  padding-block: 72px 80px;
-}
+
 .wrapper-services-page-title {
-  width: 800px;
   text-align: center;
   margin-inline: auto;
-  margin-block-end: 152px;
+  padding-block: 72px;
+ 
+  
 }
 .services-page-title {
   margin: 0 0 16px;
@@ -349,20 +347,34 @@ img {
   font-weight: 700;
   line-height: 130%;
 }
+.wrapper-services-page-desc {
+  width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
 .services-page-desc {
   margin: 0;
   line-height: 24px;
 }
+
+.wrapper-services-page-list {
+  padding-block: 80px;
+  background-color: #F4F4F4;
+}
 .page-item {
   width: 804px;
   margin-inline: auto;
-  margin-block-end: 64px;
+  
   padding: 32px;
   display: flex;
   column-gap: 40px;
   border-radius: 5px;
   border-radius: 5px;
+  background-color: #fff;
   box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.12);
+}
+.page-item:not(:last-child) {
+  margin-block-end: 64px;
 }
 .page-item-title {
   margin: 0 0 16px;
